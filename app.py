@@ -13,8 +13,7 @@ st.write("Habla con nuestro asistente inteligente powered by OpenRouter")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 # Obtener la API key desde los secrets
-API_KEY = st.secrets["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"]
-
+API_KEY = st.secrets["OPENROUTER_API_KEY"]
 # Headers para la solicitud API
 HEADERS = {
     "Content-Type": "application/json",
